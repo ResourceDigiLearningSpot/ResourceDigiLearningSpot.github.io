@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* Thiết lập font và padding cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+    /* Màu nền */
+}
+
+/* Tiêu đề và phần header */
+.title {
+    text-align: left;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.title h1 {
+    background-color: #949494;
+    /* Màu nền tiêu đề */
+    color: #333;
+    /* Màu chữ tiêu đề */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng */
+}
+
+.title h1 .digi {
+    color: #ffef72;
+    /* Màu chữ phần chữ "Digi" */
+}
+
+.title:hover {
+    transform: translateY(-5px);
+}
+
+/* Phần container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Màu nền */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+}
+
+/* Tiêu đề chính */
+h2 {
+    color: #333;
+    /* Màu chữ tiêu đề chính */
+    margin-bottom: 20px;
+}
+
+/* Đoạn văn bản thông tin */
+p {
+    color: #666;
+    /* Màu chữ thông tin */
+    margin-bottom: 10px;
+}
+
+/* Nút */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #363636;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ nút */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8b8b8b;
+    /* Màu nền khi rê chuột vào */
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+/* Phần thông tin */
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    color: #333;
+    /* Màu chữ tiêu đề thông tin */
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-section li {
+    margin-bottom: 5px;
+}
+
+.info-section li strong {
+    font-weight: bold;
+    color: #333;
+    /* Màu chữ thông tin nổi bật */
+}
