@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* Thiết lập font và padding cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    /* Màu nền */
+}
+
+/* Tiêu đề và phần header */
+.title {
+    text-align: left;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.title h1 {
+    background-color: #949494;
+    /* Màu nền tiêu đề */
+    color: #333;
+    /* Màu chữ tiêu đề */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng */
+}
+
+.title h1 .digi {
+    color: #ffef72;
+    /* Màu chữ phần chữ "Digi" */
+}
+
+.title:hover {
+    transform: translateY(-5px);
+}
+
+/* Phần container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* Màu nền */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+}
+
+/* Tiêu đề chính */
+h2 {
+    color: #333;
+    /* Màu chữ tiêu đề chính */
+    margin-bottom: 20px;
+}
+
+/* Danh sách bài học */
+.lesson-round {
+    margin-bottom: 30px;
+}
+
+.lesson-round h3 {
+    color: #333;
+    /* Màu chữ tiêu đề danh sách bài học */
+    margin-bottom: 10px;
+}
+
+.lesson-round ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lesson-round li {
+    margin-bottom: 12px;
+}
+
+.lesson-round li a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #666666;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ nút */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lesson-round li a:hover {
+    background-color: #909090;
+    /* Màu nền nút khi hover */
+    transform: translateY(-3px);
+    /* Hiệu ứng nhảy lên */
+}
+
+/* Nút */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #666666;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ nút */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #b4b4b4;
+    /* Màu nền nút khi hover */
+    transform: translateY(-3px);
+    /* Hiệu ứng nhảy lên */
+}
+
+.button:active {
+    transform: translateY(2px);
+}

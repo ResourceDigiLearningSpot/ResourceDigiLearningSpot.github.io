@@ -42,7 +42,7 @@ body {
 /* Phần container */
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     /* Màu nền */
@@ -109,8 +109,28 @@ p {
     margin-bottom: 5px;
 }
 
+.lesson-round ul {
+    list-style-type: none;
+}
+
 .info-section li strong {
     font-weight: bold;
     color: #333;
     /* Màu chữ thông tin nổi bật */
+}
+
+.lesson-round li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.5 ease-in-out, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.lesson-round li a:hover {
+    transform: translateY(-5px);
+    background-color: #949494;
 }

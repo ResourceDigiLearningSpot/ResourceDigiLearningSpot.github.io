@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học 2: Xử lý chuỗi và cấu trúc điều khiển</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học 2: Xử lý chuỗi và cấu trúc điều khiển</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ tìm hiểu cách xử lý chuỗi và sử dụng các cấu trúc điều khiển cơ bản trong
+            Python.
+        </p>
+        <h3>Xử lý chuỗi (Strings) trong Python</h3>
+        <ul>
+            <li><strong>Truy cập phần tử trong chuỗi:</strong></li>
+            <pre><code class="language-python">my_string = "Hello, world!"
+print(my_string[0])  # Output: 'H'</code></pre>
+            <li><strong>Cắt chuỗi (Slicing):</strong></li>
+            <pre><code class="language-python">print(my_string[7:])  # Output: 'world!'</code></pre>
+            <li><strong>Nối chuỗi:</strong></li>
+            <pre><code class="language-python">str1 = "Hello"
+str2 = "world"
+concatenated_string = str1 + ", " + str2 + "!"
+print(concatenated_string)  # Output: 'Hello, world!'</code></pre>
+            <li><strong>Đảo ngược chuỗi:</strong></li>
+            <pre><code class="language-python">reversed_string = my_string[::-1]
+print(reversed_string)  # Output: '!dlrow ,olleH'</code></pre>
+        </ul>
+        <h3>Cấu trúc điều khiển (Control Structures) trong Python</h3>
+        <ul>
+            <li><strong>Câu lệnh if:</strong></li>
+            <pre><code class="language-python">x = 10
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")</code></pre>
+            <li><strong>Vòng lặp for với break:</strong></li>
+            <pre><code class="language-python">for i in range(5):
+    if i == 3:
+        break
+    print(i)</code></pre>
+            <li><strong>Vòng lặp while với continue:</strong></li>
+            <pre><code class="language-python">count = 0
+while count < 5:
+    count += 1
+    if count == 3:
+        continue
+    print(count)</code></pre>
+        </ul>
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết một chương trình Python để đảo ngược một chuỗi đã cho.</li>
+            <li>Viết một chương trình Python để kiểm tra một chuỗi có phải là chuỗi Palindrome hay không.</li>
+            <li>Viết một chương trình Python để tính tổng các số từ 1 đến 100 bằng cả vòng lặp for và while.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>
