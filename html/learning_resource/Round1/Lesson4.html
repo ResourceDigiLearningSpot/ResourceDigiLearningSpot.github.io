@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Xử lý mảng trong Python</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Xử lý mảng trong Python</h2>
+        <p>
+            Trong bài học này, bạn sẽ tìm hiểu cách xử lý mảng trong ngôn ngữ lập trình Python, từ những khái niệm cơ
+            bản
+            đến các kỹ thuật nâng cao.
+        </p>
+
+        <h3>Mảng (Arrays) trong Python</h3>
+        <p>
+            Mảng là một cấu trúc dữ liệu quan trọng trong lập trình. Trong Python, mảng thường được thực hiện bằng cách
+            sử dụng danh sách (List). Dưới đây là một số khái niệm cơ bản:
+        </p>
+        <ul>
+            <li><strong>Khởi tạo một mảng:</strong></li>
+            <pre><code class="language-python">my_array = [1, 2, 3, 4, 5]</code></pre>
+            <li><strong>Truy cập phần tử trong mảng:</strong></li>
+            <pre><code class="language-python">print(my_array[0])  # Output: 1</code></pre>
+            <li><strong>Cập nhật giá trị của phần tử trong mảng:</strong></li>
+            <pre><code class="language-python">my_array[2] = 10
+print(my_array)  # Output: [1, 2, 10, 4, 5]</code></pre>
+        </ul>
+
+        <h3>Thao tác với mảng</h3>
+        <p>Dưới đây là một số thao tác phổ biến khi làm việc với mảng trong Python:</p>
+        <ul>
+            <li><strong>Thêm phần tử vào mảng:</strong></li>
+            <pre><code class="language-python">my_array.append(6)
+print(my_array)  # Output: [1, 2, 3, 4, 5, 6]</code></pre>
+            <li><strong>Xóa phần tử khỏi mảng:</strong></li>
+            <pre><code class="language-python">del my_array[2]
+print(my_array)  # Output: [1, 2, 4, 5, 6]</code></pre>
+            <li><strong>Tìm kiếm trong mảng:</strong></li>
+            <pre><code class="language-python">if 3 in my_array:
+    print("Found")
+else:
+    print("Not found")</code></pre>
+            <li><strong>Sắp xếp mảng:</strong></li>
+            <pre><code class="language-python">my_array.sort()
+print(my_array)  # Output: [1, 2, 4, 5, 6]</code></pre>
+        </ul>
+
+        <h3>Các kỹ thuật nâng cao</h3>
+        <p>Dưới đây là một số kỹ thuật nâng cao khi làm việc với mảng:</p>
+        <ul>
+            <li><strong>Đảo ngược mảng:</strong></li>
+            <pre><code class="language-python">reversed_array = my_array[::-1]
+print(reversed_array)</code></pre>
+            <li><strong>Mảng hai chiều:</strong></li>
+            <pre><code class="language-python">two_dimensional_array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(two_dimensional_array[1][2])  # Output: 6</code></pre>
+            <li><strong>Áp dụng hàm cho mỗi phần tử trong mảng:</strong></li>
+            <pre><code class="language-python">my_array = [1, 2, 3, 4, 5]
+squared_array = list(map(lambda x: x**2, my_array))
+print(squared_array)</code></pre>
+            <li><strong>Phương pháp List Comprehension:</strong></li>
+            <pre><code class="language-python">even_numbers = [x for x in range(10) if x % 2 == 0]
+print(even_numbers)</code></pre>
+        </ul>
+        <h3>Mảng đa chiều trong Python</h3>
+        <p>
+            Mảng đa chiều là một cấu trúc dữ liệu cho phép bạn lưu trữ dữ liệu theo nhiều chiều. Trong Python, bạn có
+            thể
+            tạo mảng đa chiều bằng cách sử dụng danh sách lồng nhau. Dưới đây là một số ví dụ:
+        </p>
+
+        <h4>Mảng hai chiều:</h4>
+        <p>
+            Một mảng hai chiều có thể được hiểu như một bảng, trong đó mỗi hàng là một mảng con chứa các phần tử.
+        </p>
+        <pre><code class="language-python">two_dimensional_array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(two_dimensional_array[1][2])  # Output: 6</code></pre>
+
+        <h4>Mảng ba chiều:</h4>
+        <p>
+            Một mảng ba chiều mở rộng ý tưởng của mảng hai chiều, trong đó mỗi phần tử trong mảng chính là một mảng
+            hai chiều.
+        </p>
+        <pre><code class="language-python">three_dimensional_array = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+print(three_dimensional_array[0][1][0])  # Output: 3</code></pre>
+
+        <h3>Thao tác với mảng đa chiều</h3>
+        <p>
+            Các thao tác cơ bản trên mảng đa chiều bao gồm thêm, sửa đổi và truy cập dữ liệu từ mảng.
+        </p>
+
+        <h4>Thêm phần tử vào mảng đa chiều:</h4>
+        <p>
+            Bạn có thể thêm một hàng mới vào mảng hai chiều hoặc một mảng hai chiều mới vào mảng ba chiều bằng cách sử
+            dụng phương thức append().
+        </p>
+        <pre><code class="language-python">two_dimensional_array.append([10, 11, 12])
+print(two_dimensional_array)</code></pre>
+
+        <h4>Cập nhật giá trị của phần tử trong mảng đa chiều:</h4>
+        <p>
+            Bạn cũng có thể thay đổi giá trị của một phần tử cụ thể trong mảng đa chiều bằng cách chỉ định chỉ mục của
+            nó.
+        </p>
+        <pre><code class="language-python">two_dimensional_array[1][1] = 99
+print(two_dimensional_array)</code></pre>
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết chương trình Python để tính tổng của tất cả các phần tử trong mảng.</li>
+            <li>Viết chương trình Python để tìm phần tử lớn nhất và nhỏ nhất trong mảng.</li>
+            <li>Viết chương trình Python để xóa các phần tử trùng lặp khỏi mảng.</li>
+            <li>Viết chương trình Python để tìm tất cả các số nguyên tố trong một mảng.</li>
+            <li>Viết chương trình Python để đổi chỗ hai phần tử trong mảng.</li>
+            <li>Viết chương trình Python để tính tổng của các số dương trong một mảng.</li>
+            <li>Viết chương trình Python để tìm số lần xuất hiện của một phần tử cụ thể trong mảng.</li>
+            <li>Viết chương trình Python để tìm phần tử xuất hiện nhiều nhất trong mảng.</li>
+            <li>Viết chương trình Python để đảo ngược mảng.</li>
+            <li>Viết chương trình Python để sắp xếp mảng theo thứ tự tăng dần.</li>
+            <li>Viết chương trình Python để tìm các số nguyên tố trong khoảng từ 1 đến 100 và lưu chúng vào một mảng.
+            </li>
+            <li>Viết chương trình Python để tìm tổng của các số chẵn trong mảng.</li>
+            <li>Viết chương trình Python để tìm vị trí của một phần tử cụ thể trong mảng.</li>
+            <li>Viết chương trình Python để sao chép mảng.</li>
+            <li>Viết chương trình Python để kiểm tra xem mảng có chứa số nguyên tố hay không.</li>
+            <li>Viết chương trình Python để chèn một phần tử vào mảng tại một vị trí cụ thể.</li>
+            <li>Viết chương trình Python để loại bỏ một phần tử khỏi mảng tại một vị trí cụ thể.</li>
+            <li>Viết chương trình Python để tìm tổng của hai mảng.</li>
+            <li>Viết chương trình Python để tìm giao điểm của hai mảng.</li>
+            <li>Viết chương trình Python để tìm hiệu của hai mảng.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>
