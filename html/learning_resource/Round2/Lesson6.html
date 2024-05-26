@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Giải thích và tối ưu thuật toán</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Giải thích và tối ưu thuật toán</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ tìm hiểu về các thuật toán và cách tối ưu hóa chúng để đạt hiệu suất tốt
+            nhất.
+        </p>
+
+        <h3>Giải thích thuật toán</h3>
+        <p>
+            Thuật toán là một tập hợp các bước hoặc quy tắc để giải quyết một vấn đề cụ thể. Hiểu rõ thuật toán giúp
+            chúng ta áp dụng đúng đắn và hiệu quả.
+        </p>
+        <p>Dưới đây là một ví dụ về thuật toán tìm kiếm nhị phân trong Python:</p>
+        <pre><code class="language-python">
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    mid = 0
+
+    while low <= high:
+        mid = (high + low) // 2
+
+        if arr[mid] < x:
+            low = mid + 1
+        elif arr[mid] > x:
+            high = mid - 1
+        else:
+            return mid
+    return -1
+        </code></pre>
+
+        <h3>Tối ưu thuật toán</h3>
+        <p>
+            Tối ưu hóa thuật toán liên quan đến việc cải thiện hiệu suất và giảm thời gian chạy của thuật toán. Có nhiều
+            kỹ thuật để tối ưu hóa, bao gồm việc giảm độ phức tạp thời gian và không gian.
+        </p>
+        <p>Dưới đây là một ví dụ về tối ưu hóa thuật toán sắp xếp:</p>
+        <pre><code class="language-python">
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        if not swapped:
+            break
+    return arr
+        </code></pre>
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết một thuật toán tìm kiếm tuyến tính để tìm một phần tử trong một danh sách.</li>
+            <li>Tối ưu hóa thuật toán sắp xếp chèn để cải thiện hiệu suất.</li>
+            <li>So sánh độ phức tạp thời gian của thuật toán tìm kiếm nhị phân và tìm kiếm tuyến tính.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>

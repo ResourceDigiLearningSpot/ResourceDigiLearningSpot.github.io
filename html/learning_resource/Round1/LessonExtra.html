@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Giải đề mẫu và Học thuộc syntax</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Giải đề mẫu và Học thuộc syntax</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ thực hành giải các đề mẫu và học thuộc các cú pháp quan trọng trong lập trình
+            Python.
+        </p>
+
+        <h3>Giải đề mẫu</h3>
+        <p>
+            Giải đề mẫu giúp chúng ta làm quen với các dạng bài tập thường gặp và cách giải quyết chúng một cách hiệu
+            quả.
+        </p>
+
+        <h3>Ví dụ về bài tập mẫu</h3>
+        <p>
+            Dưới đây là một ví dụ về bài tập mẫu và cách giải quyết nó.
+        </p>
+        <pre><code class="language-python">
+# Bài tập mẫu: Tính tổng các số chẵn trong một danh sách
+def sum_even_numbers(arr):
+    return sum(x for x in arr if x % 2 == 0)
+
+# Kiểm tra hàm với một danh sách mẫu
+sample_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_even_numbers(sample_list))  # Output: 30
+        </code></pre>
+
+        <h3>Học thuộc syntax</h3>
+        <p>
+            Học thuộc cú pháp là một phần quan trọng để nắm vững ngôn ngữ lập trình. Chúng ta sẽ ôn tập các cú pháp cơ
+            bản và nâng cao trong Python.
+        </p>
+        <h4>Cú pháp cơ bản</h4>
+        <p>Dưới đây là một số cú pháp cơ bản mà bạn cần nắm vững:</p>
+        <pre><code class="language-python">
+# Khai báo biến
+x = 10
+y = "Hello"
+
+# Cấu trúc điều kiện
+if x > 5:
+    print("x lớn hơn 5")
+else:
+    print("x không lớn hơn 5")
+
+# Vòng lặp for
+for i in range(5):
+    print(i)
+
+# Hàm
+def greet(name):
+    return f"Hello, {name}"
+
+print(greet("Alice"))  # Output: Hello, Alice
+        </code></pre>
+
+        <h4>Cú pháp nâng cao</h4>
+        <p>Dưới đây là một số cú pháp nâng cao trong Python:</p>
+        <pre><code class="language-python">
+# List comprehension
+squares = [x**2 for x in range(10)]
+
+# Lambda function
+add = lambda a, b: a + b
+print(add(3, 5))  # Output: 8
+
+# Dictionary comprehension
+nums = {x: x**2 for x in range(5)}
+
+# Decorator
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+        </code></pre>
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết một chương trình để đảo ngược một chuỗi và kiểm tra xem nó có phải là chuỗi đối xứng hay không.
+            </li>
+            <li>Viết một hàm sử dụng đệ quy để tính giai thừa của một số nguyên dương.</li>
+            <li>Viết chương trình tạo ra một từ điển từ một danh sách các từ, với khóa là từ và giá trị là số lần xuất
+                hiện của từ đó.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>

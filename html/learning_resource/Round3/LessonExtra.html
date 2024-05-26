@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Hướng dẫn giải đề mẫu</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Hướng dẫn giải đề mẫu</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ thực hành giải các đề mẫu để củng cố kiến thức và kỹ năng lập trình.
+        </p>
+
+        <h3>Giải đề mẫu</h3>
+        <p>
+            Giải đề mẫu giúp chúng ta làm quen với các dạng bài tập thường gặp và cách giải quyết chúng một cách hiệu
+            quả.
+        </p>
+
+        <h3>Ví dụ về bài tập mẫu</h3>
+        <p>
+            Dưới đây là một ví dụ về bài tập mẫu và cách giải quyết nó.
+        </p>
+        <pre><code class="language-python">
+# Bài tập mẫu: Tính tổng các số chẵn trong một danh sách
+def sum_even_numbers(arr):
+    return sum(x for x in arr if x % 2 == 0)
+
+# Kiểm tra hàm với một danh sách mẫu
+sample_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum_even_numbers(sample_list))  # Output: 30
+        </code></pre>
+
+        <h3>Học thuộc syntax</h3>
+        <p>
+            Học thuộc cú pháp là một phần quan trọng để nắm vững ngôn ngữ lập trình. Chúng ta sẽ ôn tập các cú pháp cơ
+            bản và nâng cao trong Python.
+        </p>
+        <h4>Cú pháp cơ bản</h4>
+        <p>Dưới đây là một số cú pháp cơ bản mà bạn cần nắm vững:</p>
+        <pre><code class="language-python">
+# Khai báo biến
+x = 10
+y = "Hello"
+
+# Cấu trúc điều kiện
+if x > 5:
+    print("x lớn hơn 5")
+else:
+    print("x nhỏ hơn hoặc bằng 5")
+
+# Vòng lặp
+for i in range(5):
+    print(i)
+        </code></pre>
+
+        <h4>Cú pháp nâng cao</h4>
+        <p>Dưới đây là một số cú pháp nâng cao bạn cần nắm vững:</p>
+        <pre><code class="language-python">
+# Hàm lambda
+square = lambda x: x * x
+print(square(5))  # Output: 25
+
+# List comprehension
+squares = [x * x for x in range(10)]
+print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# Xử lý ngoại lệ
+try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Lỗi chia cho 0")
+        </code></pre>
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết một chương trình để đếm số lần xuất hiện của một phần tử trong một danh sách.</li>
+            <li>Viết một hàm để đảo ngược một chuỗi.</li>
+            <li>Viết một hàm để kiểm tra xem một chuỗi có phải là chuỗi Palindrome hay không.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>

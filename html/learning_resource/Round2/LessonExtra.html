@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Giải thuật toán tại nhà</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Giải thuật toán tại nhà</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ thực hành giải các bài toán thuật toán tại nhà để củng cố kiến thức và kỹ
+            năng lập trình.
+        </p>
+
+        <h3>Thực hành thuật toán</h3>
+        <p>
+            Thực hành là cách tốt nhất để nắm vững các khái niệm thuật toán và kỹ thuật lập trình. Dưới đây là một số
+            bài tập thực hành để bạn tự luyện tập tại nhà.
+        </p>
+
+        <h3>Bài tập thực hành</h3>
+        <ol>
+            <li>Viết một chương trình để đếm số lần xuất hiện của mỗi phần tử trong một danh sách.</li>
+            <li>Viết thuật toán tìm số nguyên tố trong một khoảng cho trước.</li>
+            <li>Viết chương trình tính dãy Fibonacci bằng cách sử dụng đệ quy và so sánh với phương pháp không sử dụng
+                đệ quy.</li>
+        </ol>
+
+        <h3>Hướng dẫn giải bài tập</h3>
+        <p>
+            Dưới đây là một số hướng dẫn để giải quyết các bài tập trên.
+        </p>
+        <pre><code class="language-python">
+# Bài tập 1: Đếm số lần xuất hiện của mỗi phần tử
+def count_elements(arr):
+    count_dict = {}
+    for elem in arr:
+        if elem in count_dict:
+            count_dict[elem] += 1
+        else:
+            count_dict[elem] = 1
+    return count_dict
+
+# Bài tập 2: Tìm số nguyên tố
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i != 0:
+            return False
+    return True
+
+def primes_in_range(start, end):
+    return [x for x in range(start, end + 1) if is_prime(x)]
+
+# Bài tập 3: Dãy Fibonacci
+def fibonacci_recursive(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+
+def fibonacci_non_recursive(n):
+    fib = [0, 1]
+    for i in range(2, n + 1):
+        fib.append(fib[-1] + fib[-2])
+    return fib[n]
+        </code></pre>
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Hướng dẫn nâng cao giải thuật toán</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Hướng dẫn nâng cao giải thuật toán</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ nghiên cứu các kỹ thuật giải thuật toán nâng cao và cách áp dụng chúng trong
+            lập trình.
+        </p>
+
+        <h3>Phân tích thuật toán</h3>
+        <p>
+            Phân tích thuật toán là quá trình đánh giá độ phức tạp của thuật toán để hiểu rõ hiệu suất của nó. Chúng ta
+            sử dụng ký hiệu Big-O để biểu diễn độ phức tạp thời gian và không gian.
+        </p>
+        <p>Dưới đây là ví dụ về phân tích độ phức tạp của thuật toán sắp xếp:</p>
+        <pre><code class="language-python">
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+        </code></pre>
+
+        <h3>Kỹ thuật chia để trị</h3>
+        <p>
+            Chia để trị là một kỹ thuật giải thuật toán bằng cách chia bài toán lớn thành các bài toán nhỏ hơn, giải
+            quyết từng bài toán nhỏ và kết hợp kết quả lại.
+        </p>
+        <p>Dưới đây là một ví dụ về thuật toán chia để trị:</p>
+        <pre><code class="language-python">
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    
+    return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+        </code></pre>
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết thuật toán sắp xếp heap để sắp xếp một danh sách.</li>
+            <li>Phân tích độ phức tạp của thuật toán sắp xếp heap và so sánh với quick sort.</li>
+            <li>Áp dụng kỹ thuật chia để trị để giải quyết bài toán tìm kiếm trong ma trận.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>

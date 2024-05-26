@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Ôn tập Object và class trong Python</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Ôn tập Object và class trong Python</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ ôn tập về hai khái niệm quan trọng trong lập trình hướng đối tượng: Object và
+            class trong Python.
+        </p>
+
+        <h3>Class trong Python</h3>
+        <p>
+            Class là một khuôn mẫu để tạo ra các đối tượng. Class định nghĩa các thuộc tính và phương thức mà đối tượng
+            của class đó sẽ có. Một class được khai báo bằng từ khóa <code>class</code>.
+        </p>
+        <p>Dưới đây là một ví dụ về cách khai báo một class trong Python:</p>
+        <pre><code class="language-python">
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+        </code></pre>
+
+        <h3>Object trong Python</h3>
+        <p>
+            Object là một thể hiện cụ thể của một class. Khi một class được định nghĩa, không có bộ nhớ nào được cấp
+            phát cho nó cho đến khi các đối tượng của class đó được tạo ra. Một đối tượng được tạo ra bằng cách gọi
+            class như một hàm.
+        </p>
+        <p>Dưới đây là một ví dụ về cách tạo một đối tượng từ class <code>Person</code> và cách sử dụng các phương thức
+            của nó:</p>
+        <pre><code class="language-python">
+person1 = Person("Alice", 30)
+print(person1.greet())
+        </code></pre>
+
+        <h3>Tính kế thừa trong Python</h3>
+        <p>
+            Kế thừa cho phép một class con thừa hưởng các thuộc tính và phương thức từ một class cha. Điều này giúp tái
+            sử dụng mã và tạo ra một hệ thống phân cấp lớp học.
+        </p>
+        <p>Dưới đây là một ví dụ về tính kế thừa trong Python:</p>
+        <pre><code class="language-python">
+class Employee(Person):
+    def __init__(self, name, age, employee_id):
+        super().__init__(name, age)
+        self.employee_id = employee_id
+
+    def display_id(self):
+        return f"My employee ID is {self.employee_id}."
+        </code></pre>
+        <p>Sử dụng class kế thừa:</p>
+        <pre><code class="language-python">
+employee1 = Employee("Bob", 25, "E1234")
+print(employee1.greet())
+print(employee1.display_id())
+        </code></pre>
+
+        <h3>Đa hình trong Python</h3>
+        <p>
+            Đa hình là khả năng của một phương thức có thể thực hiện các hành vi khác nhau dựa trên đối tượng gọi nó. Đa
+            hình cho phép các đối tượng thuộc các class khác nhau có thể được xử lý bằng cách sử dụng cùng một giao
+            diện.
+        </p>
+        <p>Dưới đây là một ví dụ về đa hình trong Python:</p>
+        <pre><code class="language-python">
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+def animal_sound(animal):
+    print(animal.speak())
+
+dog = Dog()
+cat = Cat()
+animal_sound(dog)
+animal_sound(cat)
+        </code></pre>
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết một class tên là <code>Student</code> với các thuộc tính <code>name</code> và
+                <code>student_id</code>. Thêm phương thức <code>display_info</code> để hiển thị thông tin sinh viên.
+            </li>
+            <li>Tạo một class tên là <code>Teacher</code> kế thừa từ class <code>Person</code>. Thêm thuộc tính
+                <code>subject</code> và phương thức <code>display_subject</code>.
+            </li>
+            <li>Viết một chương trình sử dụng đa hình để hiển thị âm thanh của các loài động vật khác nhau (ví dụ: chó,
+                mèo, chim).</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>

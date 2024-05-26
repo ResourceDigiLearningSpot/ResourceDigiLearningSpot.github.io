@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học: Chuyển đổi kiểu dữ liệu và Big-O Notation</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="title" href="../../learning_resource.html">
+            <h1>Digi<span class="digi">Uni</span></h1>
+        </a>
+        <h2>Bài học: Chuyển đổi kiểu dữ liệu và Big-O Notation</h2>
+        <p>
+            Trong bài học này, chúng ta sẽ tìm hiểu về hai chủ đề quan trọng trong lập trình: Chuyển đổi kiểu dữ liệu và
+            Big-O Notation.
+        </p>
+
+        <h3>Chuyển đổi kiểu dữ liệu (Type Conversion)</h3>
+        <p>
+            Trong lập trình, chuyển đổi kiểu dữ liệu là quá trình chuyển đổi một kiểu dữ liệu thành một kiểu dữ liệu
+            khác. Điều này thường cần thiết khi làm việc với dữ liệu từ nguồn khác nhau hoặc khi cần thực hiện các phép
+            toán khác nhau trên dữ liệu.
+        </p>
+        <p>Python cung cấp các phương pháp linh hoạt để chuyển đổi kiểu dữ liệu. Dưới đây là một số ví dụ:</p>
+        <ul>
+            <li>Chuyển đổi số nguyên thành số thực: </li>
+            <pre><code class="language-python">int_to_float = float(5)</code></pre>
+            <li>Chuyển đổi chuỗi thành số nguyên: </li>
+            <pre><code class="language-python">str_to_int = int("10")</code></pre>
+            <li>Chuyển đổi số thành chuỗi: </li>
+            <pre><code class="language-python">num_to_str = str(3.14)</code></pre>
+        </ul>
+
+        <h3>Big-O Notation</h3>
+        <p>
+            Big-O Notation là một cách để mô tả hiệu suất của một thuật toán trong lập trình. Nó cho biết cách mà thời
+            gian thực hiện hoặc không gian lưu trữ cần thiết tăng lên tương ứng với kích thước của dữ liệu đầu vào.
+        </p>
+        <p>
+            Trong Big-O Notation, O đại diện cho "Order of", và nó được theo sau bởi một hàm số, thường là kích thước
+            của dữ liệu đầu vào (n).
+        </p>
+        <p>Ví dụ:</p>
+        <ul>
+            <li>O(1): Thời gian thực hiện không thay đổi dù kích thước dữ liệu đầu vào lớn hay nhỏ.</li>
+            <pre><code class="language-python">
+a = 1
+b = a + 5
+c = True
+def this_is_a_def():
+    return True
+
+    </code></pre>
+            <li>O(n): Thời gian thực hiện tăng tuyến tính với kích thước dữ liệu đầu vào.</li>
+            <pre><code class="language-python">
+n = 100
+for i in range(n): # Tăng theo kích thước của n
+    print(i)
+    </code></pre>
+            <li>O(n^2): Thời gian thực hiện tăng theo bậc hai của kích thước dữ liệu đầu vào.</li>
+            <pre><code class="language-python">
+# Generate 2 dimensions list 
+lst = []
+h = 5
+w = 6
+for i in range(h):
+    sub_lst = []
+    for j in range(w):
+        sub_lst.append(j)
+    lst.append(sub_lst)
+    </code></pre>
+            <li>Ngoài ra vẫn còn độ phức tạp O(n!) và O(2^n)</li>
+        </ul>
+
+        <img src="https://cdn-media-1.freecodecamp.org/images/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg" alt="Big-O Notation"
+            style="max-width: 100%;">
+
+        <h3>Bài tập</h3>
+        <ol>
+            <li>Viết một chương trình Python để chuyển đổi một số nguyên thành số thực và ngược lại.</li>
+            <li>Viết một chương trình Python để tính toán tổng của các số từ 1 đến n, với n là số nguyên dương đã cho.
+            </li>
+            <li>Nghiên cứu và phân tích Big-O Notation cho các thuật toán sau: tìm kiếm tuyến tính, tìm kiếm nhị phân,
+                sắp xếp nổi bọt và sắp xếp nhanh.</li>
+        </ol>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+
+</html>
